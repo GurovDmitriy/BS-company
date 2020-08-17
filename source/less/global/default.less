@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  min-width: 280px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+
+  color: var(--colorBlack3);
+}
+
+/* только для скринридера */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* настройки кастомного фокуса */
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible .focus-visible {
+  .focusCustom(#000000);
+}
+
+.js-focus-visible button.focus-visible {
+  outline-offset: 2px;
+}
+
+/* сслыка пропуска меню */
+
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 100;
+
+  padding: 10px;
+
+  color: var(--colorWhite) !important;
+
+  background-color: var(--colorGreen);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 16px;
+}
