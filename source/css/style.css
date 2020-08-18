@@ -52,6 +52,8 @@ html {
 body {
   min-width: 280px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  /*   line-height: 1.4; */
   color: var(--colorBlack2);
 }
 /* только для скринридера */
@@ -88,7 +90,7 @@ button:focus:not(:focus-visible) {
   left: 0;
   z-index: 100;
   padding: 10px;
-  color: var(--colorWhite) !important;
+  color: var(--colorWhite);
   background-color: var(--colorGreen);
 }
 .skip-link:focus {
@@ -97,27 +99,61 @@ button:focus:not(:focus-visible) {
 a:hover {
   cursor: pointer;
 }
-/* Bootstrap */
-.usr-main__section {
-  padding: 60px 50px;
+figure {
+  margin: 0;
+  padding: 0;
 }
-.usr-main__section:nth-of-type(2) {
+.bg-grey {
   background-color: var(--colorGrey);
 }
-.usr-main__btn {
-  width: 100%;
+/* Bootstrap */
+.jumbotron {
+  padding: 100px 25px;
+  color: var(--colorWhite);
+  background-color: var(--colorOrange);
 }
-@media (min-width: 768px) {
-  .usr-main__btn {
-    width: auto;
+.container-fluid {
+  padding: 60px 50px;
+}
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+  color: var(--colorOrange);
+  background-image: none;
+}
+.carousel-indicators li {
+  border-color: var(--colorOrange);
+}
+.carousel-indicators li.active {
+  background-color: var(--colorOrange);
+}
+.panel-default > .panel-heading {
+  color: var(--colorWhite);
+  background-color: var(--colorOrange);
+}
+.panel-default > .panel-footer {
+  background-color: transparent;
+}
+.slideanim {
+  visibility: hidden;
+}
+.slide {
+  animation-name: slide;
+  animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
   }
-}
-.usr-main__icon-box {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .usr-main__icon-box {
-    text-align: left;
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 .usr-main__icon {
@@ -127,4 +163,14 @@ a:hover {
 .usr-services__icon {
   font-size: 50px;
   color: var(--colorOrange);
+}
+.usr-slider {
+  padding: 50px 0;
+}
+.usr-slider__item {
+  border: none;
+}
+.usr-btn {
+  color: var(--colorWhite);
+  background-color: var(--colorOrange);
 }
