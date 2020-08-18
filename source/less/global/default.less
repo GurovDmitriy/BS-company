@@ -16,17 +16,11 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-
-  min-height: 100vh;
   min-width: 280px;
 
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  line-height: 1.8;
 
-  color: var(--colorBlack3);
+  color: var(--colorBlack2);
 }
 
 /* только для скринридера */
@@ -60,7 +54,7 @@ button:focus:not(:focus-visible) {
 }
 
 .js-focus-visible .focus-visible {
-  .focusCustom(#000000);
+  .focusCustom(--colorBlack);
 }
 
 .js-focus-visible button.focus-visible {
@@ -90,6 +84,4 @@ a:hover {
   cursor: pointer;
 }
 
-p {
-  font-size: 16px;
-}
+/* Bootstrap */

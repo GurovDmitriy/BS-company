@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>BS: Simply Me</title>
+  <title>BS: Company</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <link rel="icon" href="" type="image/svg+xml">
+  <link rel="icon" href="#" type="image/svg+xml">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"    async></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" async></script>
@@ -40,252 +40,228 @@
 
 </head>
 
-<body class="usr-body">
+<body>
 
   <header class="usr-header">
 
-    <h1 class="sr-only">Web-dev portfolio</h1>
+    <h1 class="usr-header__caption">Company</h1>
+    <p class="usr-header__text">We specialize in blablabla</p>
 
+    <form class="">
+      <input class="" id="email"
+                                  type="email"
+                                  name="email"
+                                  size="50"
+                                  placeholder="Enter your email"
+                                  required>
+      <button class="" type="button">Subscribe</button>
+    </form>
 
-    <nav class="nav-bar navbar-default usr-nav">
+    <nav class="usr-nav">
 
       <h2 class="sr-only">Main nav</h2>
-      <a class="skip-link" href="#usr-main">Skip to main</a>
 
-      <div class="container">
+      <a class="skip-link" href="#usr-main">Skip link</a>
 
-        <div class="navbar-header">
-          <button class="navbar-toggle" data-toggle="collapse"
-                                        data-target="#main-nav"
-                                        type="button">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand usr-logo" tabindex="0">Me</a>
-        </div>
+      <a class="usr-logo" href="#">Logo</a>
 
-        <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="nav navbar-nav navbar-right usr-menu">
-            <li class="usr-menu__item"><a href="#who"   class="usr-menu__link">Who</a></li>
-            <li class="usr-menu__item"><a href="#what"  class="usr-menu__link">What</a></li>
-            <li class="usr-menu__item"><a href="#where" class="usr-menu__link">Where</a></li>
-          </ul>
-        </div>
+      <ul class="usr-menu">
+        <li class="usr-menu__item"><a class="usr-menu__link" href="#">About</a></li>
+        <li class="usr-menu__item"><a class="usr-menu__link" href="#">Services</a></li>
+        <li class="usr-menu__item"><a class="usr-menu__link" href="#">Portfolio</a></li>
+        <li class="usr-menu__item"><a class="usr-menu__link" href="#">Contact</a></li>
+      </ul>
 
-      </div>
     </nav>
 
   </header>
 
-  <main class="usr-main">
-
-    <h2 class="sr-only">About me</h2>
+  <main class="usr-main" id="usr-main">
 
     <section class="usr-main__section">
-      <div class="container text-center">
-        <h3 class="usr-main__caption">Who Am I?</h3>
 
-        <picture>
-          <source type="image/webp"
-            media="(min-width: 1100px)"
-            srcset="image/min/mountain-desktop-3x-2.webp 3x,
-                    image/min/mountain-desktop-2x-2.webp 2x,
-                    image/min/mountain-desktop-2.webp">
+      <h2 class="usr-main__caption">About Company page</h2>
 
-          <source type="image/webp"
-            media="(min-width: 600px)"
-            srcset="image/min/mountain-tablet-3x-2.webp 3x,
-                    image/min/mountain-tablet-2x-2.webp 2x,
-                    image/min/mountain-tablet-2.webp">
+      <p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="usr-main__signature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <source type="image/webp"
-            srcset="image/min/mountain-mobile-3x-2.webp 3x,
-                    image/min/mountain-mobile-2x-2.webp 2x,
-                    image/min/mountain-mobile-2.webp">
+      <button class="btn btn-default btn-lg usr-btn" type="button">Get in Touch</button>
 
-          <source type="image/jpg"
-            media="(min-width: 1100px)"
-            srcset="image/min/mountain-desktop-3x-2.jpg 3x,
-                    image/min/mountain-desktop-2x-2.jpg 2x,
-                    image/min/mountain-desktop-2.jpg">
+      <span class="glyphicon glyphicon-signal usr-main__icon"></span>
 
-          <source type="image/jpg"
-            media="(min-width: 600px)"
-            srcset="image/min/mountain-tablet-3x-2.jpg 3x,
-                    image/min/mountain-tablet-2x-2.jpg 2x,
-                    image/min/mountain-tablet-2.jpg">
-
-          <source type="image/jpg"
-            srcset="image/min/mountain-mobile-3x-2.jpg 3x,
-                    image/min/mountain-mobile-2x-2.jpg 2x,
-                    image/min/mountain-mobile-2.jpg">
-
-          <img class="img-responsive img-circle usr-main__img" src="image/min/mountain-mobile-2.jpg"
-                                     width="480" height="285"
-                                     alt="Mountain">
-        </picture>
-
-        <p class="usr-main__text-caption">I'm an adventurer!</p>
-      </div>
     </section>
 
     <section class="usr-main__section">
-      <div class="container text-center">
-        <h3 class="usr-main__caption">What Am I?</h3>
 
-        <p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <span class="glyphicon glyphicon-globe usr-main__icon"></span>
 
-        <a class="btn btn-default btn-lg usr-main__btn" href="#">
-          <span class="glyphicon glyphicon-search usr-main__btn-icon"></span> Search</a>
-      </div>
+      <h2 class="usr-main__caption">Our values</h2>
+
+      <p class="usr-main__text">Mission: Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="usr-main__signature-text">Vision: Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
     </section>
 
-    <section class="usr-gallery usr-main__section">
-      <div class="container-fluid text-center">
-        <h3 class="usr-main__caption">Where To Find Me?</h3>
+    <section class="usr-main__section">
 
-        <div class="row">
-          <div class="col-sm-4">
-            <figure class="usr-gallery__figure">
-              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
+      <h2 class="usr-main__caption">Services</h2>
+      <p>What we offer</p>
 
-              <picture>
-                      <source type="image/webp"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-0.webp 3x,
-                                image/min/mountain-desktop-2x-0.webp 2x,
-                                image/min/mountain-desktop-0.webp">
+      <div class="row usr-services">
 
-                      <source type="image/webp"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-0.webp 3x,
-                                image/min/mountain-tablet-2x-0.webp 2x,
-                                image/min/mountain-tablet-0.webp">
+        <div class="col-sm-4 text-center usr-services__item">
+          <span class="glyphicon glyphicon-off usr-services__icon"></span>
+          <h3 class="usr-services__caption">Power</h3>
+          <p class="usr-services__text">Lorem ipsum dolor sit amet..</p>
+        </div>
 
-                      <source type="image/webp"
-                        data-srcset="image/min/mountain-mobile-3x-0.webp 3x,
-                                image/min/mountain-mobile-2x-0.webp 2x,
-                                image/min/mountain-mobile-0.webp">
+        <div class="col-sm-4 text-center usr-services__item">
+          <span class="glyphicon glyphicon-heart usr-services__icon"></span>
+          <h3 class="usr-services__caption">Love</h3>
+          <p class="usr-services__text">Lorem ipsum dolor sit amet..</p>
+        </div>
 
-                      <source type="image/jpg"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-0.jpg 3x,
-                                image/min/mountain-desktop-2x-0.jpg 2x,
-                                image/min/mountain-desktop-0.jpg">
+        <div class="col-sm-4 text-center usr-services__item">
+          <span class="glyphicon glyphicon-lock usr-services__icon"></span>
+          <h3 class="usr-services__caption">Job done</h3>
+          <p class="usr-services__text">Lorem ipsum dolor sit amet..</p>
+        </div>
 
-                      <source type="image/jpg"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-0.jpg 3x,
-                                image/min/mountain-tablet-2x-0.jpg 2x,
-                                image/min/mountain-tablet-0.jpg">
+      </div>
 
-                      <source type="image/jpg"
-                        data-srcset="image/min/mountain-mobile-3x-0.jpg 3x,
-                                image/min/mountain-mobile-2x-0.jpg 2x,
-                                image/min/mountain-mobile-0.jpg">
+      <div class="row usr-services">
 
-                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-0.jpg"
-                                                                   alt="Mountain"
-                                                                   width="480"
-                                                                   height="320">
-                    </picture>
-            </figure>
-          </div>
+        <div class="col-sm-4 text-center usr-services__item">
+          <span class="glyphicon glyphicon-leaf usr-services__icon"></span>
+          <h3 class="usr-services__caption">Green</h3>
+          <p class="usr-services__text">Lorem ipsum dolor sit amet..</p>
+        </div>
 
-          <div class="col-sm-4">
-            <figure class="usr-gallery__figure">
-              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
+        <div class="col-sm-4 text-center usr-services__item">
+          <span class="glyphicon glyphicon-certificate usr-services__icon"></span>
+          <h3 class="usr-services__caption">Certified</h3>
+          <p class="usr-services__text">Lorem ipsum dolor sit amet..</p>
+        </div>
 
-              <picture>
-                      <source type="image/webp"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-1.webp 3x,
-                                image/min/mountain-desktop-2x-1.webp 2x,
-                                image/min/mountain-desktop-1.webp">
+        <div class="col-sm-4 text-center usr-services__item">
+          <span class="glyphicon glyphicon-wrench usr-services__icon"></span>
+          <h3 class="usr-services__caption">Hard work</h3>
+          <p class="usr-services__text">Lorem ipsum dolor sit amet..</p>
+        </div>
 
-                      <source type="image/webp"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-1.webp 3x,
-                                image/min/mountain-tablet-2x-1.webp 2x,
-                                image/min/mountain-tablet-1.webp">
+      </div>
 
-                      <source type="image/webp"
-                        data-srcset="image/min/mountain-mobile-3x-1.webp 3x,
-                                image/min/mountain-mobile-2x-1.webp 2x,
-                                image/min/mountain-mobile-1.webp">
+    </section>
 
-                      <source type="image/jpg"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-1.jpg 3x,
-                                image/min/mountain-desktop-2x-1.jpg 2x,
-                                image/min/mountain-desktop-1.jpg">
+    <section class="usr-main__section">
 
-                      <source type="image/jpg"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-1.jpg 3x,
-                                image/min/mountain-tablet-2x-1.jpg 2x,
-                                image/min/mountain-tablet-1.jpg">
+      <h2 class="usr-main__caption">Portfolio</h2>
+      <p>What we have created</p>
 
-                      <source type="image/jpg"
-                        data-srcset="image/min/mountain-mobile-3x-1.jpg 3x,
-                                image/min/mountain-mobile-2x-1.jpg 2x,
-                                image/min/mountain-mobile-1.jpg">
+      <div class="row">
 
-                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-1.jpg"
-                                                                   alt="Mountain"
-                                                                   width="480"
-                                                                   height="320">
-                    </picture>
-            </figure>
-          </div>
+        <div class="col-sm-4">
+          <figure>
+            <img src="https://via.placeholder.com/400x300" alt="paris">
+            <figcaption>
+              <h3>Paris</h3>
+              <p>Yes, we built Paris</p>
+            </figcaption>
+          </figure>
+        </div>
 
-          <div class="col-sm-4">
-            <figure class="usr-gallery__figure">
-              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
+        <div class="col-sm-4">
+          <figure>
+            <img src="https://via.placeholder.com/400x300" alt="New York">
+            <figcaption>
+              <h3>New York</h3>
+              <p>We built New York</p>
+            </figcaption>
+          </figure>
+        </div>
 
-              <picture>
-                      <source type="image/webp"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-3.webp 3x,
-                                image/min/mountain-desktop-2x-3.webp 2x,
-                                image/min/mountain-desktop-3.webp">
+        <div class="col-sm-4">
+          <figure>
+            <img src="https://via.placeholder.com/400x300" alt="San Francisco">
+            <figcaption>
+              <h3>San Francisco</h3>
+              <p>Yes, San Fran is ours</p>
+            </figcaption>
+          </figure>
+        </div>
 
-                      <source type="image/webp"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-3.webp 3x,
-                                image/min/mountain-tablet-2x-3.webp 2x,
-                                image/min/mountain-tablet-3.webp">
+      </div>
 
-                      <source type="image/webp"
-                        data-srcset="image/min/mountain-mobile-3x-3.webp 3x,
-                                image/min/mountain-mobile-2x-3.webp 2x,
-                                image/min/mountain-mobile-3.webp">
+      <h2>What our customers say</h2>
 
-                      <source type="image/jpg"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-3.jpg 3x,
-                                image/min/mountain-desktop-2x-3.jpg 2x,
-                                image/min/mountain-desktop-3.jpg">
+      <div class="usr-slider">
 
-                      <source type="image/jpg"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-3.jpg 3x,
-                                image/min/mountain-tablet-2x-3.jpg 2x,
-                                image/min/mountain-tablet-3.jpg">
+        <blockquote class="usr-slider__item">
+          <p class="usr-slider__text">"This company is the best. I am so happy with the result!"</p>
+          <cite class="usr-slider__autor">Michael Roe, Vice President, Comment Box</cite>
+        </blockquote>
 
-                      <source type="image/jpg"
-                        data-srcset="image/min/mountain-mobile-3x-3.jpg 3x,
-                                image/min/mountain-mobile-2x-3.jpg 2x,
-                                image/min/mountain-mobile-3.jpg">
+        <blockquote class="usr-slider__item">
+          <p class="usr-slider__text">"One word... WOW!!"</p>
+          <cite class="usr-slider__autor">John Doe, Salesman, Rep Inc</cite>
+        </blockquote>
 
-                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-3.jpg"
-                                                                   alt="Mountain"
-                                                                   width="480"
-                                                                   height="320">
-                    </picture>
-            </figure>
-          </div>
+        <blockquote class="usr-slider__item">
+          <p class="usr-slider__text">"Could I... BE any more happy with this company?"</p>
+          <cite class="usr-slider__autor">Chandler Bing, Actor, FriendsAlot</cite>
+        </blockquote>
+
+      </div>
+
+    </section>
+
+    <section class="usr-main__section">
+
+      <h2 class="usr-main__caption">Pricing</h2>
+      <p>Choose a payment plan that works for you</p>
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <h3>Basic</h3>
+          <ul>
+            <li><b>20</b> Lorem</li>
+            <li><b>15</b> Lorem</li>
+            <li><b>5</b> Lorem</li>
+            <li><b>2</b> Lorem</li>
+          </ul>
+          <p><b>Endless</b> Amet</p>
+          <span>$19</span>
+          <p>per month</p>
+          <button class="btn btn-default usr-btn" type="button">Sing Up</button>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Pro</h3>
+          <ul>
+            <li><b>20</b> Lorem</li>
+            <li><b>15</b> Lorem</li>
+            <li><b>5</b> Lorem</li>
+            <li><b>2</b> Lorem</li>
+          </ul>
+          <p><b>Endless</b> Amet</p>
+          <span>$29</span>
+          <p>per month</p>
+          <button class="btn btn-default usr-btn" type="button">Sing Up</button>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Premium</h3>
+          <ul>
+            <li><b>20</b> Lorem</li>
+            <li><b>15</b> Lorem</li>
+            <li><b>5</b> Lorem</li>
+            <li><b>2</b> Lorem</li>
+          </ul>
+          <p><b>Endless</b> Amet</p>
+          <span>$49</span>
+          <p>per month</p>
+          <button class="btn btn-default usr-btn" type="button">Sing Up</button>
         </div>
 
       </div>
@@ -293,12 +269,50 @@
 
   </main>
 
-  <footer class="container-fluid text-center usr-footer">
-    <div class="container">
-      <h2 class="sr-only">Contacts</h2>
+  <footer class="usr-footer">
 
-      <p class="usr-main__text">Bootstrap Theme Made By <a class="usr-main__link" href="https://www.w3schools.com">www.w3schools.com</a></p>
+    <h2 class="usr-footer__caption">Contact</h2>
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <p class="usr-footer__text">Contact us and we'll get back to you within 24 hours.</p>
+        <address>Chicago, US</address>
+        <a href="tel:+001515151515">+00 1515151515</a>
+        <a href="mailto:myemail@something.com">myemail@something.com</a>
+      </div>
+
+      <div class="col-sm-6">
+        <form method="get" action="#">
+
+          <label class="sr-only" for="name">Name</label>
+          <input type="text"     id="name"
+                                 name="name"
+                                 placeholder="Name">
+
+          <label class="sr-only" for="email-sub">Email</label>
+          <input type="email"    id="email-sub"
+                                 name="email-sub"
+                                 placeholder="Email">
+
+          <label class="sr-only" for="comment">Enter comment</label>
+          <textarea id="comment" placeholder="Comment"></textarea>
+
+          <button class="btn btn-default" type="submit">Send</button>
+
+        </form>
+      </div>
+
     </div>
+
+    <div class="usr-mapbox">
+      <iframe class="usr-mapbox__map lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21199.39368693741!2d-87.90682833219944!3d41.79729524051114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e49a3cec6b09d%3A0xc4fcd0031c649c22!2z0JDQnNCY0KLQkCDQpdC10LvRgiDQkNC00LLQtdC90YLQuNGB0YIg0JzQtdC00LjQutCw0Lsg0KHQtdC90YLQtdGAINCb0LAg0JPRgNC10LnQvdC00LY!5e0!3m2!1sru!2sru!4v1597741535572!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <button class="usr-btn-up" type="button"><span class="sr-only">Page Up</span></button>
+
+    <p class="usr-copyright">Bootstrap Theme Made By <a href="#">www.w3schools.com</a></p>
+
   </footer>
 
   <script src="js/focus-visible.js" async></script>

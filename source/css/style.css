@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/woff2/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/woff2/Montserrat-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/woff2/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* переменные css */
+:root {
+  /* переменные цвета */
+  --colorWhite: #ffffff;
+  --colorBlack: #000000;
+  --colorBlack2: #303030;
+  --colorGrey: #f6f6f6;
+  --colorOrange: #f4511e;
+}
+/* переменные less */
+/* переменные вьюпорта */
+/* центровщик */
+/* переменные плотности экрана */
+/* центровщик контента */
+/* кастомный фокус */
+/* параметры текста для mobile */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  min-width: 280px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--colorBlack2);
+}
+/* только для скринридера */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+button:hover {
+  cursor: pointer;
+}
+/* настройки кастомного фокуса */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+.js-focus-visible .focus-visible {
+  outline: 2px solid --colorBlack;
+}
+.js-focus-visible button.focus-visible {
+  outline-offset: 2px;
+}
+/* сслыка пропуска меню */
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 100;
+  padding: 10px;
+  color: var(--colorWhite) !important;
+  background-color: var(--colorGreen);
+}
+.skip-link:focus {
+  top: 0;
+}
+a:hover {
+  cursor: pointer;
+}
+/* Bootstrap */
+.usr-main__section {
+  padding: 60px 50px;
+}
+.usr-main__section:nth-of-type(2) {
+  background-color: var(--colorGrey);
+}
+.usr-main__btn {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .usr-main__btn {
+    width: auto;
+  }
+}
+.usr-main__icon-box {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .usr-main__icon-box {
+    text-align: left;
+  }
+}
+.usr-main__icon {
+  font-size: 200px;
+  color: var(--colorOrange);
+}
+.usr-services__icon {
+  font-size: 50px;
+  color: var(--colorOrange);
+}
