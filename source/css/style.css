@@ -26,6 +26,7 @@
   --colorBlack: #000000;
   --colorBlack2: #303030;
   --colorGrey: #f6f6f6;
+  --colorGrey2: #818181;
   --colorOrange: #f4511e;
 }
 /* переменные less */
@@ -34,7 +35,9 @@
 /* переменные плотности экрана */
 /* центровщик контента */
 /* кастомный фокус */
-/* параметры текста для mobile */
+/* параметры текста mibile */
+/* параметры текста tablet */
+/* параметры текста desktop */
 html,
 body {
   margin: 0;
@@ -50,11 +53,22 @@ html {
   box-sizing: inherit;
 }
 body {
-  min-width: 280px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  /*   line-height: 1.4; */
+  font-size: 16px;
+  line-height: 26px;
   color: var(--colorBlack2);
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    font-size: 20px;
+    line-height: 38px;
+  }
 }
 /* только для скринридера */
 .visually-hidden {
@@ -78,7 +92,7 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 .js-focus-visible .focus-visible {
-  outline: 2px solid --colorBlack;
+  outline: 2px solid var(--colorBlack);
 }
 .js-focus-visible button.focus-visible {
   outline-offset: 2px;
@@ -107,13 +121,48 @@ figure {
   background-color: var(--colorGrey);
 }
 /* Bootstrap */
+/* Title в шапке */
 .jumbotron {
-  padding: 100px 25px;
+  padding: 50px 15px;
   color: var(--colorWhite);
   background-color: var(--colorOrange);
 }
+/* контейнеры */
 .container-fluid {
-  padding: 60px 50px;
+  padding: 50px 15px;
+}
+/* стиль навигации */
+.navbar {
+  background-color: var(--colorOrange);
+  border: none;
+}
+.navbar-default .navbar-brand {
+  color: var(--colorWhite);
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: var(--colorWhite);
+}
+.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: var(--colorOrange);
+}
+.navbar-default .navbar-nav > li > a {
+  color: var(--colorWhite);
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: var(--colorOrange);
+  background-color: var(--colorWhite);
+}
+/* стили содержания */
+.small {
+  color: var(--colorGrey2);
 }
 .thumbnail {
   padding: 0 0 15px 0;
@@ -138,6 +187,17 @@ figure {
 .panel-default > .panel-footer {
   background-color: transparent;
 }
+.table td:first-child {
+  text-align: right;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  border: none;
+}
 .slideanim {
   visibility: hidden;
 }
@@ -156,9 +216,25 @@ figure {
     transform: translateY(0%);
   }
 }
+.usr-main__text {
+  margin-bottom: 25px;
+}
 .usr-main__icon {
-  font-size: 200px;
+  position: relative;
+  display: block;
+  height: 150px;
+  font-size: 150px;
   color: var(--colorOrange);
+}
+.usr-main__icon::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, 0);
+}
+.usr-services__item {
+  margin-bottom: 25px;
 }
 .usr-services__icon {
   font-size: 50px;
@@ -171,6 +247,10 @@ figure {
   border: none;
 }
 .usr-btn {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.usr-btn:hover {
   color: var(--colorWhite);
   background-color: var(--colorOrange);
 }
