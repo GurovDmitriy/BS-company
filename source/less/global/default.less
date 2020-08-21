@@ -60,11 +60,19 @@ button:focus:not(:focus-visible) {
 }
 
 .js-focus-visible .focus-visible {
-  .focusCustom(var(--colorBlack));
+  .focusCustom(var(--colorOrange));
 }
 
 .js-focus-visible button.focus-visible {
   outline-offset: 2px;
+}
+
+.panel h3:focus {
+  .focusCustom(var(--colorWhite));
+}
+
+.usr-header *:focus {
+  .focusCustom(var(--colorWhite));
 }
 
 /* сслыка пропуска меню */
@@ -77,9 +85,9 @@ button:focus:not(:focus-visible) {
 
   padding: 10px;
 
-  color: var(--colorWhite);
+  color: var(--colorOrange);
 
-  background-color: var(--colorGreen);
+  background-color: var(--colorWhite);
 }
 
 .skip-link:focus {
@@ -126,6 +134,10 @@ figure {
 
 .navbar-default .navbar-brand {
   color: var(--colorWhite);
+
+  &:hover {
+    color: var(--colorOrange2);
+  }
 }
 
 .navbar-default .navbar-toggle {
@@ -192,8 +204,18 @@ figure {
   background-color: transparent;
 }
 
+.table {
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .table td:first-child {
   text-align: right;
+}
+
+.table td:last-child {
+  text-align: left;
 }
 
 .table > tbody > tr > td,
@@ -203,6 +225,10 @@ figure {
 .table > thead > tr > td,
 .table > thead > tr > th {
   border: none;
+}
+
+.glyphicon-chevron-up {
+  color: var(--colorOrange);
 }
 
 .slideanim {

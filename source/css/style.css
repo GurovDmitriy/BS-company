@@ -24,10 +24,11 @@
   /* переменные цвета */
   --colorWhite: #ffffff;
   --colorBlack: #000000;
+  --colorOrange: #f4511e;
+  --colorOrange2: #ebae75;
   --colorBlack2: #303030;
   --colorGrey: #f6f6f6;
   --colorGrey2: #818181;
-  --colorOrange: #f4511e;
 }
 /* переменные less */
 /* переменные вьюпорта */
@@ -92,10 +93,16 @@ button:focus:not(:focus-visible) {
   outline: none;
 }
 .js-focus-visible .focus-visible {
-  outline: 2px solid var(--colorBlack);
+  outline: 2px solid var(--colorOrange);
 }
 .js-focus-visible button.focus-visible {
   outline-offset: 2px;
+}
+.panel h3:focus {
+  outline: 2px solid var(--colorWhite);
+}
+.usr-header *:focus {
+  outline: 2px solid var(--colorWhite);
 }
 /* сслыка пропуска меню */
 .skip-link {
@@ -104,8 +111,8 @@ button:focus:not(:focus-visible) {
   left: 0;
   z-index: 100;
   padding: 10px;
-  color: var(--colorWhite);
-  background-color: var(--colorGreen);
+  color: var(--colorOrange);
+  background-color: var(--colorWhite);
 }
 .skip-link:focus {
   top: 0;
@@ -138,6 +145,9 @@ figure {
 }
 .navbar-default .navbar-brand {
   color: var(--colorWhite);
+}
+.navbar-default .navbar-brand:hover {
+  color: var(--colorOrange2);
 }
 .navbar-default .navbar-toggle {
   border: none;
@@ -187,8 +197,16 @@ figure {
 .panel-default > .panel-footer {
   background-color: transparent;
 }
+.table {
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
 .table td:first-child {
   text-align: right;
+}
+.table td:last-child {
+  text-align: left;
 }
 .table > tbody > tr > td,
 .table > tbody > tr > th,
@@ -197,6 +215,9 @@ figure {
 .table > thead > tr > td,
 .table > thead > tr > th {
   border: none;
+}
+.glyphicon-chevron-up {
+  color: var(--colorOrange);
 }
 .slideanim {
   visibility: hidden;
@@ -253,4 +274,17 @@ figure {
 .usr-btn:hover {
   color: var(--colorWhite);
   background-color: var(--colorOrange);
+}
+.usr-footer__text {
+  margin-bottom: 20px;
+}
+.usr-footer__link {
+  color: inherit;
+}
+.usr-footer__link:hover {
+  color: var(--colorOrange);
+}
+.usr-footer__map-img {
+  width: 100%;
+  height: auto;
 }
