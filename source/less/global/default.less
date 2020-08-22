@@ -123,6 +123,22 @@ figure {
 
 .container-fluid {
   padding: 50px 15px;
+
+  @media (min-width: @tabletWidth) {
+    padding: 80px 40px;
+  }
+}
+
+.container {
+  @media (min-width: @tabletWidth) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktopWidth) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* стиль навигации */
@@ -135,7 +151,8 @@ figure {
 .navbar-default .navbar-brand {
   color: var(--colorWhite);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--colorOrange2);
   }
 }
@@ -192,6 +209,12 @@ figure {
 
 .carousel-indicators li.active {
   background-color: var(--colorOrange);
+}
+
+.panel-default {
+  &:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
 }
 
 .panel-default > .panel-heading {

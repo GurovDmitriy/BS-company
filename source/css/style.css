@@ -59,7 +59,7 @@ body {
   line-height: 26px;
   color: var(--colorBlack2);
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   body {
     font-size: 18px;
     line-height: 30px;
@@ -138,6 +138,23 @@ figure {
 .container-fluid {
   padding: 50px 15px;
 }
+@media (min-width: 768px) {
+  .container-fluid {
+    padding: 80px 40px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /* стиль навигации */
 .navbar {
   background-color: var(--colorOrange);
@@ -146,7 +163,8 @@ figure {
 .navbar-default .navbar-brand {
   color: var(--colorWhite);
 }
-.navbar-default .navbar-brand:hover {
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
   color: var(--colorOrange2);
 }
 .navbar-default .navbar-toggle {
@@ -189,6 +207,9 @@ figure {
 }
 .carousel-indicators li.active {
   background-color: var(--colorOrange);
+}
+.panel-default:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.2);
 }
 .panel-default > .panel-heading {
   color: var(--colorWhite);
@@ -254,6 +275,11 @@ figure {
   display: block;
   transform: translate(-50%, 0);
 }
+@media (min-width: 768px) {
+  .usr-main__icon {
+    font-size: 200px;
+  }
+}
 .usr-services__item {
   margin-bottom: 25px;
 }
@@ -274,6 +300,11 @@ figure {
 .usr-btn:hover {
   color: var(--colorWhite);
   background-color: var(--colorOrange);
+}
+@media (min-width: 768px) {
+  .usr-btn {
+    width: auto;
+  }
 }
 .usr-footer__text {
   margin-bottom: 20px;
