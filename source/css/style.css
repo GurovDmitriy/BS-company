@@ -39,6 +39,25 @@
 /* параметры текста mibile */
 /* параметры текста tablet */
 /* параметры текста desktop */
+/*Navigation*/
+/*только для скринридера*/
+/*настройки кастомного фокуса*/
+/*сслыка пропуска меню*/
+/*Bootstrap*/
+/*Caption*/
+/*Base tag*/
+/*Jumbotron*/
+/*Container*/
+/*Col*/
+/*Nav*/
+/*Small text*/
+/*Btn*/
+/*Glyphicon*/
+/*Carusel*/
+/*Panel*/
+/*Table*/
+/*Button up page*/
+/*Animation*/
 html,
 body {
   margin: 0;
@@ -96,13 +115,15 @@ button:focus:not(:focus-visible) {
 .js-focus-visible .focus-visible {
   outline: 2px solid var(--colorOrange);
 }
-.js-focus-visible button.focus-visible {
+.js-focus-visible button.focus-visible,
+.js-focus-visible input.focus-visible {
   outline-offset: 2px;
 }
-.panel h3:focus {
-  outline: 2px solid var(--colorWhite);
+.js-focus-visible header input.focus-visible,
+.js-focus-visible header button.focus-visible {
+  outline-color: var(--colorWhite);
 }
-.usr-header *:focus {
+.panel h3:focus {
   outline: 2px solid var(--colorWhite);
 }
 /*сслыка пропуска меню*/
@@ -238,6 +259,13 @@ figure img {
 blockquote {
   border: none;
 }
+footer img {
+  width: 100%;
+  height: auto;
+}
+footer .container-fluid:first-child .glyphicon {
+  margin-right: 10px;
+}
 /*Jumbotron*/
 .jumbotron {
   color: var(--colorWhite);
@@ -270,6 +298,7 @@ blockquote {
     padding-right: 80px;
   }
 }
+/*Col*/
 .col-sm-4,
 .col-sm-5,
 .col-sm-7,
@@ -298,9 +327,12 @@ blockquote {
 .navbar-default .navbar-brand {
   color: var(--colorWhite);
 }
-.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:hover {
+  color: var(--colorOrange2);
+}
 .navbar-default .navbar-brand:focus {
   color: var(--colorOrange2);
+  outline-color: var(--colorWhite);
 }
 .navbar-default .navbar-toggle {
   border: none;
@@ -323,10 +355,15 @@ blockquote {
   color: var(--colorOrange);
   background-color: var(--colorWhite);
 }
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+}
 /*Small text*/
 .small {
   color: var(--colorGrey2);
 }
+/*Btn*/
 .btn-default {
   width: 100%;
   margin-bottom: 20px;
@@ -340,6 +377,10 @@ blockquote {
     width: auto;
   }
 }
+.input-group-btn .btn {
+  vertical-align: top;
+}
+/*Glyphicon*/
 section:first-child .glyphicon {
   position: relative;
   display: block;
@@ -417,13 +458,6 @@ section:nth-child(2) .glyphicon {
 /*Button up page*/
 .glyphicon-chevron-up {
   color: var(--colorOrange);
-}
-footer img {
-  width: 100%;
-  height: auto;
-}
-footer .glyphicon {
-  margin-right: 10px;
 }
 /*Animation*/
 .slideanim {

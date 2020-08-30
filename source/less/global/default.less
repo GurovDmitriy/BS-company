@@ -1,3 +1,24 @@
+/*Navigation*/
+
+/*только для скринридера*/
+/*настройки кастомного фокуса*/
+/*сслыка пропуска меню*/
+/*Bootstrap*/
+/*Caption*/
+/*Base tag*/
+/*Jumbotron*/
+/*Container*/
+/*Col*/
+/*Nav*/
+/*Small text*/
+/*Btn*/
+/*Glyphicon*/
+/*Carusel*/
+/*Panel*/
+/*Table*/
+/*Button up page*/
+/*Animation*/
+
 html,
 body {
   margin: 0;
@@ -65,15 +86,17 @@ button:focus:not(:focus-visible) {
   .focusCustom(var(--colorOrange));
 }
 
-.js-focus-visible button.focus-visible {
+.js-focus-visible button.focus-visible,
+.js-focus-visible input.focus-visible {
   outline-offset: 2px;
 }
 
-.panel h3:focus {
-  .focusCustom(var(--colorWhite));
+.js-focus-visible header input.focus-visible,
+.js-focus-visible header button.focus-visible {
+  outline-color: var(--colorWhite);
 }
 
-.usr-header *:focus {
+.panel h3:focus {
   .focusCustom(var(--colorWhite));
 }
 
@@ -224,6 +247,15 @@ blockquote {
   border:none;
 }
 
+footer img {
+  width: 100%;
+  height: auto;
+}
+
+footer .container-fluid:first-child .glyphicon {
+  margin-right: 10px;
+}
+
 /*Jumbotron*/
 
 .jumbotron {
@@ -259,6 +291,8 @@ blockquote {
   }
 }
 
+/*Col*/
+
 .col-sm-4,
 .col-sm-5,
 .col-sm-7,
@@ -284,9 +318,13 @@ blockquote {
 .navbar-default .navbar-brand {
   color: var(--colorWhite);
 
-  &:hover,
+  &:hover {
+    color: var(--colorOrange2);
+  }
+
   &:focus {
     color: var(--colorOrange2);
+    outline-color: var(--colorWhite);
   }
 }
 
@@ -317,11 +355,18 @@ blockquote {
   background-color: var(--colorWhite);
 }
 
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+}
+
 /*Small text*/
 
 .small {
   color: var(--colorGrey2);
 }
+
+/*Btn*/
 
 .btn-default {
   width: 100%;
@@ -337,6 +382,12 @@ blockquote {
     width: auto;
   }
 }
+
+.input-group-btn .btn {
+  vertical-align: top;
+}
+
+/*Glyphicon*/
 
 section:first-child .glyphicon {
   position: relative;
@@ -436,20 +487,10 @@ section:nth-child(2) .glyphicon {
   border: none;
 }
 
-
 /*Button up page*/
 
 .glyphicon-chevron-up {
   color: var(--colorOrange);
-}
-
-footer img {
-  width: 100%;
-  height: auto;
-}
-
-footer .glyphicon {
-  margin-right: 10px;
 }
 
 /*Animation*/
