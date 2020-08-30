@@ -240,31 +240,28 @@ blockquote {
 }
 /*Jumbotron*/
 .jumbotron {
-  padding: 50px 15px;
   color: var(--colorWhite);
   background-color: var(--colorOrange);
 }
 /*Container*/
-/*.container {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: @tabletWidth) {
-    padding-left: 40px;
-    padding-right: 40px;
+@media (min-width: 768px) {
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
   }
-
-  @media (min-width: @desktopWidth + 120px) {
+}
+@media (min-width: 1320px) {
+  .container {
     padding-left: 0;
     padding-right: 0;
   }
-}*/
+}
 .container-fluid {
-  padding: 50px 15px;
+  padding: 40px 15px;
 }
 @media (min-width: 768px) {
   .container-fluid {
-    padding: 80px 40px;
+    padding: 60px 40px;
   }
 }
 @media (min-width: 1320px) {
@@ -284,6 +281,14 @@ blockquote {
 .col-sm-7:last-child,
 .col-sm-8:last-child {
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-7,
+  .col-sm-8 {
+    margin-bottom: 30px;
+  }
 }
 /*Nav*/
 .navbar {
@@ -373,6 +378,11 @@ section:nth-child(2) .glyphicon {
 .carousel .item {
   padding: 20px 0;
 }
+@media (min-width: 768px) {
+  .carousel .item {
+    padding: 40px 0;
+  }
+}
 /*Panel*/
 .panel-default:hover {
   box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.2);
@@ -411,6 +421,9 @@ section:nth-child(2) .glyphicon {
 footer img {
   width: 100%;
   height: auto;
+}
+footer .glyphicon {
+  margin-right: 10px;
 }
 /*Animation*/
 .slideanim {

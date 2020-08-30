@@ -227,8 +227,6 @@ blockquote {
 /*Jumbotron*/
 
 .jumbotron {
-  padding: 50px 15px;
-
   color: var(--colorWhite);
 
   background-color: var(--colorOrange);
@@ -236,26 +234,23 @@ blockquote {
 
 /*Container*/
 
-/*.container {
-  padding-left: 20px;
-  padding-right: 20px;
-
+.container {
   @media (min-width: @tabletWidth) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (min-width: @desktopWidth + 120px) {
     padding-left: 0;
     padding-right: 0;
   }
-}*/
+}
 
 .container-fluid {
-  padding: 50px 15px;
+  padding: 40px 15px;
 
   @media (min-width: @tabletWidth) {
-    padding: 80px 40px;
+    padding: 60px 40px;
   }
 
   @media (min-width: @desktopWidth + 120px) {
@@ -272,6 +267,10 @@ blockquote {
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tabletWidth) {
+    margin-bottom: 30px;
   }
 }
 
@@ -388,6 +387,10 @@ section:nth-child(2) .glyphicon {
 
 .carousel .item {
   padding: 20px 0;
+
+  @media (min-width: @tabletWidth) {
+    padding: 40px 0;
+  }
 }
 
 /*Panel*/
@@ -443,6 +446,10 @@ section:nth-child(2) .glyphicon {
 footer img {
   width: 100%;
   height: auto;
+}
+
+footer .glyphicon {
+  margin-right: 10px;
 }
 
 /*Animation*/
