@@ -363,6 +363,12 @@ footer .container-fluid:first-child .glyphicon {
 .small {
   color: var(--colorGrey2);
 }
+/*form*/
+@media (min-width: 1200px) {
+  .input-group-btn {
+    line-height: 30px;
+  }
+}
 /*Btn*/
 .btn-default {
   width: 100%;
@@ -376,9 +382,6 @@ footer .container-fluid:first-child .glyphicon {
   .btn-default {
     width: auto;
   }
-}
-.input-group-btn .btn {
-  vertical-align: top;
 }
 /*Glyphicon*/
 section:first-child .glyphicon {
